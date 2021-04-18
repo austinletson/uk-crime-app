@@ -2,6 +2,9 @@ package com.gotenna.ukcrime.data
 
 import java.io.Serializable
 
+/**
+ * Data classes to represent crimes
+ */
 data class Crime(
         val id: Int,
         val category: String,

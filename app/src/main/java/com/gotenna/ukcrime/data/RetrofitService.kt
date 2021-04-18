@@ -14,6 +14,9 @@ object RetrofitService {
         .client(httpClient.build())
         .build()
 
+    /**
+     * Function to generate the retrofit service
+     */
     fun <S> createService(serviceClass: Class<S>?): S {
         return retrofit.create(serviceClass)
     }

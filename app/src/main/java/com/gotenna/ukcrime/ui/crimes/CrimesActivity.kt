@@ -29,7 +29,7 @@ class CrimesActivity : AppCompatActivity() {
 
 
     companion object {
-        val EXTRA_CRIME = "com.gotenna.ukcrime.EXTRA_CRIME"
+        const val EXTRA_CRIME = "com.gotenna.ukcrime.EXTRA_CRIME"
     }
 
     private val crimeObserver = Observer<List<Crime>> { crimes ->

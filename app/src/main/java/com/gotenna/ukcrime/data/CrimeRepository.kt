@@ -9,6 +9,9 @@ object CrimeRepository {
 
     private val crimesApi = RetrofitService.createService(CrimesApi::class.java)
 
+    /**
+     * Function to return live data of crimes commited for a given force and category
+     */
     fun getCrimesNoLocation(category: String, force: String): MutableLiveData<List<Crime>> {
        val crimesList = MutableLiveData<List<Crime>>()
 
@@ -29,6 +32,9 @@ object CrimeRepository {
         return crimesList
     }
 
+    /**
+     * Function to return live data for crimes at a given location
+     */
     fun getCrimesLocation(lat: Double, lng: Double): MutableLiveData<List<Crime>> {
         val crimesList = MutableLiveData<List<Crime>>()
 
