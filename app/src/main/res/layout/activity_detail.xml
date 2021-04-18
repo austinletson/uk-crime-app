@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/check_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.detail.DetailActivity">
+
+    <TextView
+        android:id="@+id/detail_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:gravity="center"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="@string/detail_loading"/>
+
+    <TextView
+        android:id="@+id/detail_date_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/detail_title"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="@string/detail_date"/>
+
+    <TextView
+        android:id="@+id/detail_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@+id/detail_title"
+        app:layout_constraintStart_toEndOf="@id/detail_date_label"
+        android:text="@string/detail_loading"/>
+
+    <TextView
+        android:id="@+id/detail_lat_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/detail_date_label"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="@string/detail_lat"/>
+
+    <TextView
+        android:id="@+id/detail_lat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@+id/detail_date_label"
+        app:layout_constraintStart_toEndOf="@id/detail_lat_label"
+        android:text="@string/detail_loading"/>
+
+    <TextView
+        android:id="@+id/detail_long_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/detail_lat_label"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="@string/detail_long"/>
+
+    <TextView
+        android:id="@+id/detail_long"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@+id/detail_lat_label"
+        app:layout_constraintStart_toEndOf="@id/detail_long_label"
+        android:text="@string/detail_loading"/>
+
+    <TextView
+        android:id="@+id/detail_street_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/detail_long_label"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="@string/detail_street"/>
+
+    <TextView
+        android:id="@+id/detail_street"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@+id/detail_long"
+        app:layout_constraintStart_toEndOf="@id/detail_street_label"
+        android:text="@string/detail_loading"/>
+
+    <TextView
+        android:id="@+id/detail_category_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/detail_street_label"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="@string/detail_category"/>
+
+    <TextView
+        android:id="@+id/detail_category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@+id/detail_street_label"
+        app:layout_constraintStart_toEndOf="@id/detail_category_label"
+        android:text="@string/detail_loading"/>
+
+    <TextView
+        android:id="@+id/detail_status_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/detail_category_label"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="@string/detail_status"/>
+
+    <TextView
+        android:id="@+id/detail_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@+id/detail_category_label"
+        app:layout_constraintStart_toEndOf="@id/detail_status_label"
+        android:text="@string/detail_loading"/>
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:id="@+id/map"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@id/detail_status_label"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

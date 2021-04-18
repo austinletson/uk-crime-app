@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">UK Crime</string>
+    <string name="title_activity_detail">Detail</string>
+
+    <string-array name="filter_dropdown_array">
+        <item>London Crimes</item>
+        <item>My Location</item>
+    </string-array>
+
+    <string name="crime_number">Crime #&#160;</string>
+
+    <string name="detail_action_bar_title"></string>
+    <string name="detail_loading">Loading...</string>
+    <string name="detail_date">Date:&#160;</string>
+    <string name="detail_lat">Lat:&#160;</string>
+    <string name="detail_long">Long:&#160;</string>
+    <string name="detail_street">Street:&#160;</string>
+    <string name="detail_category">Category:&#160;</string>
+    <string name="detail_status">Status:&#160;</string>
+    <string name="not_found">Not Found</string>
+
+</resources>
